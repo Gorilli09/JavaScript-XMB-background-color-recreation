@@ -1,2 +1,2 @@
 # JavaScript-XMB-color-test
-XMB colors recreated in JavaScript.
+This is just to recreate the XrossMediaBar background in JavaScript.
