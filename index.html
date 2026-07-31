@@ -1,0 +1,133 @@
+<p id="javascriptWarning">The preview pane in your file browser does not support JavaScript! Open this file in a web browser instead!</p>
+<body/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+const date = new Date();
+let month = date.getMonth();
+let hour = date.getHours();
+
+var monthColor;
+var hourBrightness;
+var hourColor;
+
+$("#javascriptWarning").remove();
+
+if (month == 0){
+	monthColor = "Silver";
+	console.log("January");
+} else if (month == 1){
+	monthColor = "Khaki";
+	console.log("February");
+} else if (month == 2){
+	monthColor = "GreenYellow";
+	console.log("March");
+} else if (month == 3){
+	monthColor = "HotPink";
+	console.log("April");
+} else if (month == 4){
+	monthColor = "LimeGreen";
+	console.log("May");
+} else if (month == 5){
+	monthColor = "MediumSlateBlue";
+	console.log("June");
+} else if (month == 6){
+	monthColor = "DarkTurquoise";
+	console.log("July");
+} else if (month == 7){
+	monthColor = "MediumBlue";
+	console.log("August");
+} else if (month == 8){
+	monthColor = "BlueViolet";
+	console.log("September");
+} else if (month == 9){
+	monthColor = "Gold";
+	console.log("October");
+} else if (month == 10){
+	monthColor = "SaddleBrown";
+	console.log("November");
+} else if (month == 11){
+	monthColor = "Red";
+	console.log("December");
+} else {
+	console.log("ERROR!");
+};
+
+if (hour == 0){
+	hourColor = "#1e1e1e";
+	console.log("00:00");
+} else if (hour == 1){
+	hourColor = "#0f0f0f";
+	console.log("01:00");
+} else if (hour == 2){
+	hourColor = "#000000";
+	console.log("02:00");
+} else if (hour == 3){
+	hourColor = "#1f1f1f";
+	console.log("03:00");
+} else if (hour == 4){
+	hourColor = "#3e3e3e";
+	console.log("04:00");
+} else if (hour == 5){
+	hourColor = "#5d5d5d";
+	console.log("05:00");
+} else if (hour == 6){
+	hourColor = "#7c7c7c";
+	console.log("06:00");
+} else if (hour == 7){
+	hourColor = "#9b9b9b";
+	console.log("07:00");
+} else if (hour == 8){
+	hourColor = "#bababa";
+	console.log("08:00");
+} else if (hour == 9){
+	hourColor = "#d9d9d9";
+	console.log("09:00");
+} else if (hour == 10){
+	hourColor = "#f8f8f8";
+	console.log("10:00");
+} else if (hour == 11){
+	hourColor = "#e1e1e1";
+	console.log("11:00");
+} else if (hour == 12){
+	hourColor = "#d2d2d2";
+	console.log("12:00");
+} else if (hour == 13){
+	hourColor = "#c3c3c3";
+	console.log("13:00");
+} else if (hour == 14){
+	hourColor = "#b4b4b4";
+	console.log("14:00");
+} else if (hour == 15){
+	hourColor = "#a5a5a5";
+	console.log("15:00");
+} else if (hour == 16){
+	hourColor = "#969696";
+	console.log("16:00");
+} else if (hour == 17){
+	hourColor = "#878787";
+	console.log("17:00");
+} else if (hour == 18){
+	hourColor = "#787878";
+	console.log("18:00");
+} else if (hour == 19){
+	hourColor = "#696969";
+	console.log("19:00");
+} else if (hour == 20){
+	hourColor = "#5a5a5a";
+	console.log("20:00");
+} else if (hour == 21){
+	hourColor = "#4b4b4b";
+	console.log("21:00");
+} else if (hour == 22){
+	hourColor = "#3c3c3c";
+	console.log("22:00");
+} else if (hour == 23){
+	hourColor = "#2d2d2d";
+	console.log("23:00");
+} else {
+	console.log("ERROR!");
+};
+
+$("body").css("background", `linear-gradient(0deg, ${monthColor} 0%, ${hourColor} 50%)`);
+</script>
